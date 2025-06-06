@@ -1,0 +1,27 @@
+singleton class
+----------------
+
+
+public class Vehicle{
+
+//private static instance variable
+
+private static Vehilce Instance;
+
+//private const to prevemt instation
+
+private Vehicle(){
+System.out.println("");
+}
+
+//public method to provide acces t instance
+
+public static synchronized Vehicle getInstance(){
+if(instance==null)
+{
+instance=new Vehilce();
+}
+return instance;
+}
+
+}
